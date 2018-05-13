@@ -14,6 +14,7 @@ export class CartPage {
     cart: any = 0;
     tax: any = 0;
     total: any = 0;
+    discountVal: any =0;
     constructor(public navParams: NavParams, public navCtrl: NavController) {
         this.cartItems = navParams.data.items;
         if(this.cartItems.length > 0)
@@ -68,9 +69,13 @@ export class CartPage {
     }
     discount(){
         this.cartCount();
-        if(this.coupon == '10percent')
+        if(this.coupon == '10percent'){
+            this.discountVal = this.total/10;
             this.total = this.total - (this.total/10);
-        else
+        }
+        else{
+            this.discountVal = 0;
             this.cartCount();
+        }
     }
 }

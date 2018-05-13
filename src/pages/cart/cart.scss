@@ -68,54 +68,71 @@ page-cart {
                 border-top: 1px solid #ccc;
                 border-bottom: 1px solid #ccc;
             }
-            .coupon{
-                display: inline-block;
-                width: calc(50% - 20px);
-                border-radius: 10px;
-                border: 1px solid #ccc;
-                margin: 20px 0 0 20px;
-                .item-inner{
-                    border-bottom: none !important;
-                    box-shadow: none !important;
-                }
-            }
-            .gst{
+        }
+    }
+    .cartDetails{
+        background: #efefef;
+    }
+    .coupon{
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(50% - 20px);
+        margin: 20px 0 0 20px;
+        ion-item {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        ion-label {
+            text-align: center;
+            margin: 0px;
+            color: green;
+        } 
+        .item-inner{
+            border-bottom: none !important;
+            box-shadow: none !important;
+            button {
                 background: transparent;
-                display: inline-block;
-                width: 49%;
-                text-align: right;
+                margin: 0;
+                border-left: 1px solid #ccc;
+            }
+        }
+    }
+    .gst{
+        background: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        width: 49%;
+        text-align: right;
+        font-weight: bold;
+        .item-inner{
+            border: none !important;
+        }
+        p{
+            color: #000;
+        }
+        .label-md{
+            margin-bottom: 0;
+            p:last-child{
+                font-size: 2.5rem;
+                margin: 0;
+            }
+        }
+    }
+    ion-item.grandTotal{
+        background: transparent;
+        .cartQuantity, .total{
+            display: inline-block;
+            width: 50%;
+            padding-right: 5px;
+            p:first-child{
+                font-size: 2rem;
+                color: #000;
                 font-weight: bold;
-                .item-inner{
-                    border: none !important;
-                }
-                p{
-                    color: #000;
-                }
-                .label-md{
-                    margin-bottom: 0;
-                    p:last-child{
-                        font-size: 2.5rem;
-                        margin: 0;
-                    }
-                }
             }
-            ion-item.grandTotal{
-                background: transparent;
-                .cartQuantity, .total{
-                    display: inline-block;
-                    width: 50%;
-                    padding-right: 5px;
-                    p:first-child{
-                        font-size: 2rem;
-                        color: #000;
-                        font-weight: bold;
-                    }
-                    p:last-child{
-                        font-size: 4rem;
-                        color: #000;
-                        font-weight: bold;
-                    }
-                }
+            p:last-child{
+                font-size: 4rem;
+                color: #000;
+                font-weight: bold;
             }
         }
     }
