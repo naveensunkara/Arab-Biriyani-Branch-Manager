@@ -22,7 +22,7 @@
         </ion-segment-button>
     </ion-segment>
     <div class="ongoing" *ngIf="order == 'ongoing'">
-        <ion-card no-margin>
+        <ion-card no-margin (click)="trackPage('TrackPage')">
             <ion-card-header>
                 <h1 class="orderId">PO# 1101110</h1>
                 <ion-badge item-end>PACKING</ion-badge>
@@ -44,11 +44,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <button ion-button icon-left small round class="reorder" (click)="trackPage('MenuPage')">
-                    <ion-icon name="md-refresh"></ion-icon>
-                    Re-Order
-                </button>
-                <button ion-button small round class="trackorder" float-right (click)="trackPage('TrackPage')">Track Order</button>
             </ion-card-content>
         </ion-card>
     </div>
@@ -75,6 +70,10 @@
                     </tbody>
                 </table>
                 <p>{{item.date}}</p>
+                <button ion-button icon-left small round class="reorder" (click)="trackPage('CartPage')">
+                    <ion-icon name="md-refresh"></ion-icon>
+                    Re-Order
+                </button>
             </ion-card-content>
         </ion-card>
     </div>

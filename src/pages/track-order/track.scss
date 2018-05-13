@@ -32,13 +32,15 @@ page-track-order {
             font-size: 2.25rem;
             color: #95989a;
             h1.orderId {
-                font-size: 6rem;
                 color: #5e5e5e;
                 font-weight: 700;
+                display: inline-block;
+                float: right;
+
             }
         }
     }
-    ion-card.order-status{
+    ion-card.order-status{ 
         background: transparent;
         box-shadow: none;
         padding: 3rem 2rem; 
@@ -67,26 +69,22 @@ page-track-order {
         }
     }
     ion-card-content {
-        table {
-            text-align: center;
-            font-size: 2.25rem;
-            th{
-                font-weight: normal;
-                color: #95989a;
-                width: 30%;
+        h3{
+            font-size: 1.8rem;
+            color: #95989a;
+            margin-bottom: 16px;
+        }
+        > div h1{
+            width: 49%;
+            display: inline-block;
+            margin-bottom: 16px;
+            font-size: 1.8rem;
+            &.delivery-address {
+                width: auto;
             }
-            td {
-                color: #5e5e5e;
-                font-weight: 700;
-                font-size: 2.5rem;
-            }
-            th:last-child {
-                text-align: right;
-                width: 40%;
-            }
-            td:last-child {
-                text-align: right;
-            }
+        }
+        .totalAmount h1{
+            font-size: 32px;
         }
     }
     .scroll-content {

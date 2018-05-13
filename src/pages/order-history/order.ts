@@ -37,7 +37,13 @@ export class OrderPage {
         this.navCtrl.pop();
     }
     trackPage(page) {
-        this.navCtrl.push(page);
+        this.navCtrl.push(page, {items: [{
+            title: "Chicken Biriyani",
+            price: "10.99",
+            quantity: 50,
+            imgSrc: "/assets/imgs/chicken-biryani.jpg"
+          }]
+        });
     }
     segmentChanged($event) {
         console.log(this.order)
