@@ -35,7 +35,6 @@ export class MyApp {
     { title: 'My Orders', component: 'OrderPage', class: 'inactive' },
     { title: 'Payment History', component: 'PaymentHistoryPage', class: 'inactive' },
     { title: 'My Account', component: 'AccountPage', class: 'inactive' },
-    { title: 'Notification', component: 'NotificationPage', class: 'inactive' },
     { title: 'Chat', component: 'ChatPage', class: 'inactive' },
     { title: 'Log Out', component: 'LoginPage', class: 'inactive' }
   ];

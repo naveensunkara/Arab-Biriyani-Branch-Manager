@@ -1,0 +1,52 @@
+page-chat {
+    ion-header {
+        ion-toolbar {
+            .toolbar-content {
+                ion-title {
+                    padding-right: 56px;
+                }
+            }
+        }
+    }
+    ion-footer {
+        background: #fff;
+        .chat-text {
+            width: 74%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .chat-reply {
+            width: 25%;
+            display: inline-block;
+            background: #fea20f;
+            color: #333;
+            text-transform: uppercase;
+            vertical-align: top;
+            margin: 0px;
+            font-weight: 700;
+            height: 4.3rem;
+        }
+    }
+    ion-content {
+        .scroll-content {
+            background: #efefef;
+            ion-segment {
+                background: #fff;
+            }
+            ion-card {
+                width: 70%;
+                font-size: 1.5rem;
+                .card-header-md {
+                    padding-top: 5px;
+                    padding-bottom: 5px; 
+                }
+            }
+            .customer-text {
+                float: left;
+            }
+            .biriyani-text {
+                float: right;
+            }
+        }
+    }
+}
