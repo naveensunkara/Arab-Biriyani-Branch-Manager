@@ -1,0 +1,8 @@
+{
+  "name": "Arab-Biriyani-Branch-Manager",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
