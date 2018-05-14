@@ -40,8 +40,14 @@ page-chat {
     ion-content {
         .scroll-content {
             background: #efefef;
+            display: flex;
             ion-segment {
                 background: #fff;
+                display: block;
+                width: 20%;
+                .segment-button{
+                    width: 100%;
+                }
             }
             ion-card {
                 width: 70%;
