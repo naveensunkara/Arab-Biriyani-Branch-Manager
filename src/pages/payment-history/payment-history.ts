@@ -9,6 +9,7 @@ import { IonicPage, Nav, NavController } from 'ionic-angular';
 
 export class PaymentHistoryPage {
     category: any = 'all';
+    notification: any = 4;
     history: any = [
         {
             type: 'paid',

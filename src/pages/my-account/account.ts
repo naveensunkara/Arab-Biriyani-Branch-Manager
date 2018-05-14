@@ -8,6 +8,7 @@ import { IonicPage, NavController, AlertController } from 'ionic-angular';
 })
 
 export class AccountPage {
+  notification: any = 4;
   details: any = {
     name: 'STREET BiRIYANI',
     phone: '+65 89745641',

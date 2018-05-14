@@ -9,7 +9,7 @@ import { IonicPage, Nav, NavController } from 'ionic-angular';
 
 export class ChatPage {
   constructor(public navCtrl: NavController) { }
-
+  notification: any =4;
   customers: any = 'cust1';
 
   backButtonClick() {

@@ -22,6 +22,7 @@ export class MenuPage {
   minutes: number;
   hours: number;
   cart: any = 0;
+  notification: any = 4;
   menuItems: any = [
     {
       title: "Chicken Biriyani",

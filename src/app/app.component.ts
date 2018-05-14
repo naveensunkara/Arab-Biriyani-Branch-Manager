@@ -13,11 +13,11 @@ import { Settings } from '../providers';
         <ion-title>Arab St Biriyani</ion-title>
       </ion-toolbar>
     </ion-header>
-
     <ion-content>
       <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" [attr.indicate]="p.class">
           {{p.title}}
+          <ion-badge item-end *ngIf="p.title == 'Chat'">4</ion-badge>
         </button>
       </ion-list>
     </ion-content>

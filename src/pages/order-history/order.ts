@@ -9,6 +9,7 @@ import { IonicPage, Nav, NavController } from 'ionic-angular';
 
 export class OrderPage {
     order: any = 'ongoing';
+    notification: any = 4;
     completedOrders: any= [
         {
             orderId: 'PO# 1101109',
