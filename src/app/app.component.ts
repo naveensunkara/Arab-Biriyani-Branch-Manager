@@ -27,7 +27,7 @@ import { Settings } from '../providers';
 })
 export class MyApp {
   rootPage = FirstRunPage;
-  swipe: boolean = true;
+  swipe: boolean = false;
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
