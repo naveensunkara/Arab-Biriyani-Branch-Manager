@@ -5,6 +5,10 @@
             <ion-badge item-end>{{notification}}</ion-badge>
         </button>
         <ion-title text-center>Chat</ion-title>
+        <button ion-button icon-only class="notification" (click)="presentpopover($event)">
+            <ion-icon name="ios-notifications-outline"></ion-icon>
+            <ion-badge item-end>3</ion-badge>
+        </button>
     </ion-toolbar>
 </ion-header>
 <ion-content>
