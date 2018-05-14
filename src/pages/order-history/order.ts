@@ -49,8 +49,10 @@ export class OrderPage {
     segmentChanged($event) {
         console.log(this.order)
     }
-    presentPopover() {
+    presentPopover(event) {
         let popover = this.popup.create('OrderPopoverPage');
-        popover.present();
+        popover.present({
+            ev: event
+        });
       }
 }

@@ -1,3 +1,16 @@
 page-order-popover {
-
+    .content-md{
+        background: rgb(106, 0, 129);
+        .searchbar-md .searchbar-input{
+            background: rgba(158, 158, 158, 0.2);
+            color: #fff;
+        }
+        .item-md{
+            background: rgb(106, 0, 129);
+            color: #fff;
+            .item-inner{
+                border-bottom: none;
+            }
+        }
+    }
 }

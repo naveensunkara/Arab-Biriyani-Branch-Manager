@@ -34,9 +34,24 @@ page-track-order {
             h1.orderId {
                 color: #5e5e5e;
                 font-weight: 700;
-                display: inline-block;
                 float: right;
 
+            }
+        }
+        ion-card-content{
+            h3{
+                font-size: 1.8rem;
+                color: #95989a;
+                margin-bottom: 16px;
+            }
+            > div h1{
+                width: 49%;
+                display: inline-block;
+                margin-bottom: 16px;
+                font-size: 1.8rem;
+                &.delivery-address {
+                    width: auto;
+                }
             }
         }
     }
@@ -64,24 +79,7 @@ page-track-order {
                     background: url(../../assets/imgs/confirm.png) no-repeat left center;
                     background-size: auto 80%;
                 }
-            }
-            
-        }
-    }
-    ion-card-content {
-        h3{
-            font-size: 1.8rem;
-            color: #95989a;
-            margin-bottom: 16px;
-        }
-        > div h1{
-            width: 49%;
-            display: inline-block;
-            margin-bottom: 16px;
-            font-size: 1.8rem;
-            &.delivery-address {
-                width: auto;
-            }
+            }            
         }
     }
     .scroll-content {

@@ -46,6 +46,49 @@ page-payment-details {
                 margin-bottom: 3rem; 
             }
         }
+        ion-card-content {
+            h3{
+                font-size: 1.8rem;
+                color: #95989a;
+                margin-bottom: 16px;
+            }
+            > div h1{
+                width: 49%;
+                display: inline-block;
+                margin-bottom: 16px;
+                font-size: 1.8rem;
+                &.delivery-address {
+                    width: auto;
+                }
+            }
+            .item-radio{
+                .radio.radio-md {
+                    margin-right: 1rem;
+                    .radio-icon {
+                        border-color: #95989a;
+                    }
+                    .radio-icon.radio-checked {
+                        border-color: #5d4484;
+                        .radio-inner {
+                            background-color: #5d4484;
+                        }
+                    }
+                }
+                .item-inner {
+                    ion-label {
+                        color: #95989a;
+                        font-size: 2.25rem;
+                    }
+                }
+            }
+            .item-radio.item-radio-checked {
+                .item-inner {
+                    ion-label {
+                        color: #333;
+                    }
+                }
+            }
+        }
     }
     ion-card.order-status {
         ion-card-header {
@@ -54,49 +97,6 @@ page-payment-details {
             }
         }
         
-    }
-    ion-card-content {
-        h3{
-            font-size: 1.8rem;
-            color: #95989a;
-            margin-bottom: 16px;
-        }
-        > div h1{
-            width: 49%;
-            display: inline-block;
-            margin-bottom: 16px;
-            font-size: 1.8rem;
-            &.delivery-address {
-                width: auto;
-            }
-        }
-        .item-radio{
-            .radio.radio-md {
-                margin-right: 1rem;
-                .radio-icon {
-                    border-color: #95989a;
-                }
-                .radio-icon.radio-checked {
-                    border-color: #5d4484;
-                    .radio-inner {
-                        background-color: #5d4484;
-                    }
-                }
-            }
-            .item-inner {
-                ion-label {
-                    color: #95989a;
-                    font-size: 2.25rem;
-                }
-            }
-        }
-        .item-radio.item-radio-checked {
-            .item-inner {
-                ion-label {
-                    color: #333;
-                }
-            }
-        }
     }
     .scroll-content {
         background: #efefef;
