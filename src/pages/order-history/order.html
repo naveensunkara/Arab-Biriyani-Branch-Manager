@@ -5,7 +5,7 @@
             <ion-badge item-end>{{notification}}</ion-badge>
         </button>
         <ion-title text-center>My Orders</ion-title>
-        <button ion-button icon-only class="filter">
+        <button ion-button icon-only class="filter" (click)="presentPopover()">
             <ion-icon name="ios-funnel-outline"></ion-icon>
         </button>
 

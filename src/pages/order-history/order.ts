@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, Nav, NavController } from 'ionic-angular';
+import { IonicPage, Nav, NavController, PopoverController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -33,7 +33,7 @@ export class OrderPage {
             date: 'On 23 Apr, 2018 06:05 PM'
         }
     ]
-    constructor(public navCtrl: NavController) { }
+    constructor(public navCtrl: NavController, public popup: PopoverController) { }
     backButtonClick() {
         this.navCtrl.pop();
     }
@@ -49,4 +49,8 @@ export class OrderPage {
     segmentChanged($event) {
         console.log(this.order)
     }
+    presentPopover() {
+        let popover = this.popup.create('OrderPopoverPage');
+        popover.present();
+      }
 }
