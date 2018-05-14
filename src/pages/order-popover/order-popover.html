@@ -2,12 +2,12 @@
   <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)">
   </ion-searchbar>
   <ion-item>
-    <ion-label>Sausage</ion-label>
-    <ion-checkbox [(ngModel)]="sausage"></ion-checkbox>
+    <ion-label>Ready For Delivery</ion-label>
+    <ion-checkbox [(ngModel)]="ready"></ion-checkbox>
   </ion-item>
 
   <ion-item>
-    <ion-label>Mushrooms</ion-label>
-    <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+    <ion-label>Packing</ion-label>
+    <ion-checkbox [(ngModel)]="packing"></ion-checkbox>
   </ion-item>
 </ion-content>
