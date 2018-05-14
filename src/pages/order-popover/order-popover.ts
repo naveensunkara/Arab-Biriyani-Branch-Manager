@@ -14,12 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'order-popover.html',
 })
 export class OrderPopoverPage {
-
+  show: boolean = true;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OrderPopoverPage');
+    if(navParams.data.value != 'ongoing')
+      this.show = false;
   }
 
 }

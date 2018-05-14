@@ -50,7 +50,7 @@ export class OrderPage {
         console.log(this.order)
     }
     presentPopover(event) {
-        let popover = this.popup.create('OrderPopoverPage');
+        let popover = this.popup.create('OrderPopoverPage', {value: this.order});
         popover.present({
             ev: event
         });
