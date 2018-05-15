@@ -5,7 +5,5 @@
   Ionic pages and navigation.
 -->
 <ion-content>
-    <button ion-button color="light" clear block>CUST #4</button>
-    <button ion-button color="light" clear block>CUST #5</button>
-    <button ion-button color="light" clear block>CUST #6</button>
+    <button ion-button color="light" clear block (click)="close(i)" *ngFor="let cust of queue; index as i">{{cust.name}}</button>
 </ion-content>

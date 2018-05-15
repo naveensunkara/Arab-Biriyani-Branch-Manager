@@ -7,101 +7,40 @@
         <ion-title text-center>Chat</ion-title>
         <button ion-button icon-only class="notification" (click)="presentpopover($event)">
             <ion-icon name="ios-notifications-outline"></ion-icon>
-            <ion-badge item-end>3</ion-badge>
+            <ion-badge item-end>{{customerQueue.length}}</ion-badge>
         </button>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-segment [(ngModel)]="customers">
-        <ion-segment-button value="cust1">
-            Cust #1
-        </ion-segment-button>
-        <ion-segment-button value="cust2">
-            Cust #2
-        </ion-segment-button>
-        <ion-segment-button value="cust3">
-            Cust #3
-        </ion-segment-button>
-        <ion-segment-button value="cust4">
-            Cust #4
-        </ion-segment-button>
+    <ion-segment [(ngModel)]="currentChat">
+        <div *ngFor="let customer of customers; index as i" (click)="changeChat(i)">
+            <ion-segment-button [value]="customer.name" >
+                {{customer.name}}
+            </ion-segment-button>
+        </div>
     </ion-segment>
-    <div [ngSwitch]="customers">
-        <div *ngSwitchCase="'cust1'">
-            <ion-card class="customer-text">
-                <ion-card-header>
-                    Customer #1
-                </ion-card-header>
-                <ion-card-content>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                </ion-card-content>
-            </ion-card>
-            <ion-card class="biriyani-text">
-                <ion-card-content>
-                    Welcome to Street Biriyani. How may i assist you...!
-                </ion-card-content>
-            </ion-card>
-            <ion-footer>
-                <ion-input type="text" placeholder="Type Here..." class="chat-text"></ion-input>
-                <button ion-button class="chat-reply">Reply</button>
-            </ion-footer>
-        </div>
-        <div *ngSwitchCase="'cust2'">
-            <ion-card class="customer-text">
-                <ion-card-header>
-                    Customer #2
-                </ion-card-header>
-                <ion-card-content>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                </ion-card-content>
-            </ion-card>
-            <ion-card class="biriyani-text">
-                <ion-card-content>
-                    Welcome to Street Biriyani. How may i assist you...!
-                </ion-card-content>
-            </ion-card>
-            <ion-footer>
-                <ion-input type="text" placeholder="Type Here..." class="chat-text"></ion-input>
-                <button ion-button class="chat-reply">Reply</button>
-            </ion-footer>
-        </div>
-        <div *ngSwitchCase="'cust3'">
-            <ion-card class="customer-text">
-                <ion-card-header>
-                    Customer #3
-                </ion-card-header>
-                <ion-card-content>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                </ion-card-content>
-            </ion-card>
-            <ion-card class="biriyani-text">
-                <ion-card-content>
-                    Welcome to Street Biriyani. How may i assist you...!
-                </ion-card-content>
-            </ion-card>
-            <ion-footer>
-                <ion-input type="text" placeholder="Type Here..." class="chat-text"></ion-input>
-                <button ion-button class="chat-reply">Reply</button>
-            </ion-footer>
-        </div>
-        <div *ngSwitchCase="'cust4'">
-            <ion-card class="customer-text">
-                <ion-card-header>
-                    Customer #4
-                </ion-card-header>
-                <ion-card-content>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-                </ion-card-content>
-            </ion-card>
-            <ion-card class="biriyani-text">
-                <ion-card-content>
-                    Welcome to Street Biriyani. How may i assist you...!
-                </ion-card-content>
-            </ion-card>
-            <ion-footer>
-                <ion-input type="text" placeholder="Type Here..." class="chat-text"></ion-input>
-                <button ion-button class="chat-reply">Reply</button>
-            </ion-footer>
+    <div [ngSwitch]="currentChat">
+        <div *ngFor="let customer of customers; index as i">
+            <ng-container *ngSwitchCase="customer.name" >
+                <ion-card class="customer-text">
+                    <ion-card-header>
+                        {{customer.name}}
+                    </ion-card-header>
+                    <ion-card-content>
+                        {{customer.custChat}}
+                    </ion-card-content>
+                </ion-card>
+                <ion-card class="biriyani-text">
+                    <ion-card-content>
+                        {{customer.branchChat}}
+                    </ion-card-content>
+                </ion-card>
+                <ion-footer>
+                    <ion-input type="text" placeholder="Type Here..." class="chat-text"></ion-input>
+                    <button ion-button class="chat-reply">Reply</button>
+                </ion-footer>
+            </ng-container>
         </div>
     </div>
+    <div *ngIf="customers.length == 0" class="largeFont" padding margin text-center>Tap the Notification bell to chat with the customers in the Chat Queue</div>
 </ion-content>
