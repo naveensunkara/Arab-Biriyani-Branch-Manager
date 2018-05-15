@@ -28,31 +28,31 @@ export class MenuPage {
       title: "Chicken Biriyani",
       price: "10.99",
       quantity: 0,
-      imgSrc: "/assets/imgs/chicken-biryani.jpg"
+      imgSrc: "assets/imgs/chicken-biryani.jpg"
     },
     {
       title: "Mutton Biriyani",
       price: "19.99",
       quantity: 0,
-      imgSrc: "/assets/imgs/mutton-biryani.jpg"
+      imgSrc: "assets/imgs/mutton-biryani.jpg"
     },
     {
       title: "Fish Biriyani",
       price: "11.99",
       quantity: 0,
-      imgSrc: "/assets/imgs/fish-biryani.jpg"
+      imgSrc: "assets/imgs/fish-biryani.jpg"
     },
     {
       title: "Egg Biriyani",
       price: "7.99",
       quantity: 0,
-      imgSrc: "/assets/imgs/egg-biryani.jpg"
+      imgSrc: "assets/imgs/egg-biryani.jpg"
     },
     {
       title: "Veg Biriyani",
       price: "5.99",
       quantity: 0,
-      imgSrc: "/assets/imgs/veg-biryani.jpg"
+      imgSrc: "assets/imgs/veg-biryani.jpg"
     }
   ]
   constructor(public navCtrl: NavController) {

@@ -61,8 +61,6 @@ export class CartPage {
         });
         this.tax = this.total*7/100;
         this.total = this.tax+this.total;
-        if (this.cart > 99)
-            this.cart = '99+';
     }
     nextPage(){
         this.navCtrl.push('PaymentPage');

@@ -7,10 +7,10 @@ page-menu {
                 box-shadow: none;
                 ion-badge.badge-md{
                     padding: 4px 0;
-                    width: 20px;
-                    height: 20px;
+                    width: 2rem;
+                    height: 2rem;
                     border-radius: 50%;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     position: absolute;
                     top: 0;
                     right: 2px;
@@ -29,7 +29,7 @@ page-menu {
                 color: #333; 
                 font-size: 2rem;
                 font-weight: 700;
-                height: 6rem;
+                height: 56px;
                 margin:0px;
             }
         }
@@ -92,7 +92,8 @@ page-menu {
                             margin: 0px;
                             vertical-align: top;
                             box-shadow: none;
-                            font-size: 1rem
+                            font-size: 1rem;
+                            width: 35px;
                         }
                     }
                 }

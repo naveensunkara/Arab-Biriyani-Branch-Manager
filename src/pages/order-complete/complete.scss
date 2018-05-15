@@ -27,6 +27,7 @@ page-completed {
                 height: 6rem;
                 margin:0px;
                 position: static;
+                width: 50vw;
             } 
         }
     }
@@ -38,7 +39,7 @@ page-completed {
             ion-card-header {
                 img {
                     width: 100px;
-                    margin: 1rem auto;
+                    margin: 0 auto;
                 }
                 h1 {
                     font-weight: 700;

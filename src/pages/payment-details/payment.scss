@@ -19,7 +19,7 @@ page-payment-details {
                     color: #333;
                     font-size: 2rem;
                     font-weight: 700;
-                    height: 6rem;
+                    height: 56px;
                     margin:0px;
                     position: static;
                 }  
@@ -31,7 +31,6 @@ page-payment-details {
         margin-bottom: 2rem;
         ion-card-header {
             font-size: 2.25rem;
-            color: #95989a;
             h1.orderId {
                 float: right;
                 color: #5e5e5e;
@@ -49,7 +48,6 @@ page-payment-details {
         ion-card-content {
             h3{
                 font-size: 1.8rem;
-                color: #95989a;
                 margin-bottom: 16px;
             }
             > div h1{

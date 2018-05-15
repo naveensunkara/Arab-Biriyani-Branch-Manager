@@ -22,6 +22,7 @@ page-track-order {
                     height: 6rem;
                     margin:0px;
                     position: static;
+                    height: 56px;
                 }  
             }
         }
@@ -30,7 +31,6 @@ page-track-order {
         width: 100%;
         ion-card-header {
             font-size: 2.25rem;
-            color: #95989a;
             h1.orderId {
                 color: #5e5e5e;
                 font-weight: 700;
@@ -41,7 +41,6 @@ page-track-order {
         ion-card-content{
             h3{
                 font-size: 1.8rem;
-                color: #95989a;
                 margin-bottom: 16px;
             }
             > div h1{

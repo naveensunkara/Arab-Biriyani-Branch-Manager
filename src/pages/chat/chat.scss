@@ -7,8 +7,8 @@ page-chat {
                 box-shadow: none;
                 ion-badge.badge-md{
                     padding: 4px 0;
-                    width: 20px;
-                    height: 20px;
+                    width: 2rem;
+                    height: 2rem;
                     border-radius: 50%;
                     font-size: 1.1rem;
                     position: absolute;
@@ -34,7 +34,7 @@ page-chat {
             vertical-align: top;
             margin: 0px;
             font-weight: 700;
-            height: 4.3rem;
+            height: 56px;
         }
     }
     ion-content {
